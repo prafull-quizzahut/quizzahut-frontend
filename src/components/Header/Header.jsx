@@ -35,7 +35,7 @@ const Header = () => {
           width={150}
         />
       </div>
-
+              
       <ul
         className={`transition duration-500 flex-1 flex relative justify-center items-center gap-8 max-lg:flex-col max-lg:items-end max-lg:gap-10 max-lg:fixed max-lg:top-[5%] max-lg:right-[15%] ${
           !hamOpen
@@ -100,20 +100,21 @@ const Header = () => {
         </li>
       </ul>
 
-      <div className="flex h-full items-center justify-center mr-8 ">
+      <div className="flex h-full items-center justify-center mx-4 ">
+      <div className="user flex justify-center items-center m-2 px-4 h-1/2 rounded-full bg-blue-100  gap-3 cursor-pointer">
+          <FaUser />
+          {"User"}
+          <IoIosArrowDown />
+        </div>
         <div
-          className={`hidden max-lg:flex cursor-pointer duration-1000 mx-8  w-10   items-center justify-center ${
+          className={`hidden max-lg:flex cursor-pointer duration-1000 mx-4  w-10   items-center justify-center ${
             hamOpen && "hidden "
           } `}
           onClick={toggleHamButton}
         >
           {hamIcon}
         </div>
-        <div className="user flex justify-center items-center m-2 px-4 h-1/2 rounded-full bg-blue-100  gap-3 cursor-pointer">
-          <FaUser />
-          {"User"}
-          <IoIosArrowDown />
-        </div>
+        
       </div>
     </header>
   );
