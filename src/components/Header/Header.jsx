@@ -35,7 +35,7 @@ const Header = () => {
           width={150}
         />
       </div>
-
+              
       <ul
         className={`transition duration-500 flex-1 flex relative justify-center items-center gap-8 max-lg:flex-col max-lg:items-end max-lg:gap-10 max-lg:fixed max-lg:top-[5%] max-lg:right-[15%] ${
           !hamOpen
