@@ -1,23 +1,38 @@
-import React from 'react'
-import Header from './components/Header/Header'
-import HeroSection from './sections/HeroSection'
-import CarouselSection from './sections/CarouselSection'
-import Carousel from './components/Carousel'
-import ContactForm from './components/ContactForm'
-import Footer from './components/Footer'
+import React from "react";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import QuizDisplay from "./feature/QuizDisplay/QuizDisplay";
+import RootLayout from "./layout/RootLayout";
+
+
+
+import {  Home, About, Profile, Contact, QuizzHome } from "./pages";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+    <Route path="/" element={<RootLayout/>}>
+      <Route index element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact/>} />
+      <Route path="/quizzes" element={<QuizzHome/>} />
+      <Route path="/myaccount" element={<Profile/>} />
+      <Route path="*" element={<Home/>} />
+      
+    </Route>
+    <Route>
+       <Route path="/quiz" element={<QuizDisplay/>} />
+    </Route>
+   </>
+  )
+);
 
 const App = () => {
-  return (
-    <div>
+  return <RouterProvider router={router} />
+};
 
-        <Header/>
-        <HeroSection/>
-        <CarouselSection label="Quizes"/>
-        <CarouselSection label="Developer Profiles"/>
-        <ContactForm/>
-        <Footer/>
-    </div>
-  )
-}
-
-export default App
+export default App;
