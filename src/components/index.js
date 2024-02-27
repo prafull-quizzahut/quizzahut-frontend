@@ -1,4 +1,4 @@
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
-
-export {Header,Footer}
+import ContentWrapper from './ContentWrapper/ContentWrapper'
+export {Header,Footer, ContentWrapper}
