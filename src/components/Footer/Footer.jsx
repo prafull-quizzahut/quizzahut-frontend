@@ -91,9 +91,9 @@ const Footer = () => {
                 alt="quizzahut"
                 className="w-1/2 min-w-32"
               />
-              <div className="p-4 flex flex-wrap">
-                <input type="text" placeholder="Enter your Email" className="px-4 py-2 outline-none border-2 rounded-full m-1" />
-                <button className="bg-sky-300 mx-2 px-4 py-2 text-slate-800 text-sm rounded-full">Subscribe</button>
+              <div className="p-4 flex flex-wrap shrink max-sm:w-full overflow-hidden">
+                <input type="text" placeholder="Enter your Email" className="px-4 py-2 w-full  outline-none border-2 rounded-full m-1" />
+                <button className="bg-sky-300 font-medium text-slate-600 mx-2 px-4 py-2 my-1  text-sm rounded-full">Subscribe</button>
               </div>
             </div>
           </div>

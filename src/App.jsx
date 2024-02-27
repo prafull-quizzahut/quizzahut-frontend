@@ -10,7 +10,7 @@ import RootLayout from "./layout/RootLayout";
 
 
 
-import {  Home, About, Profile, Contact, QuizzHome } from "./pages";
+import {  Home, About, Profile, Contact, QuizzHome,Test } from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +21,7 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<Contact/>} />
       <Route path="/quizzes" element={<QuizzHome/>} />
       <Route path="/myaccount" element={<Profile/>} />
+      <Route path="/test" element={<Test/> } />
       <Route path="*" element={<Home/>} />
       
     </Route>

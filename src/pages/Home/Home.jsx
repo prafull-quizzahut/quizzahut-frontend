@@ -6,13 +6,15 @@ import Quizes from './sections/Quizes'
 
 const Home = () => {
   return (
-    <ContentWrapper>
+    <div className='w-full mx-auto'>
+      <ContentWrapper>
       
-      <HeroSection/>
-      <Quizes/>
-      <Developers/>
-    
-    </ContentWrapper>
+        <HeroSection/>
+        <Quizes/>
+        <Developers/>
+      
+      </ContentWrapper>
+    </div>
   )
 }
 
