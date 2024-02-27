@@ -17,7 +17,7 @@ const QuizzHome = () => {
   return (
     <div className="w-full">
       <ContentWrapper>
-        <div className="w-full grid grid-cols-5 px-4 sm:px-10">
+        <div className="w-full grid grid-cols-1 md:grid-cols-5 px-4 sm:px-10">
           <Sidebar
             classname="col-span-1  "
             sectionList={sectionList}
