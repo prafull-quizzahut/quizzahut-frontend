@@ -54,13 +54,16 @@ function DevCarousel({ data }) {
                 <header>
                   <div className="avatar">
                     <img
-                      src="https://avatars.githubusercontent.com/u/14923323?s=400&u=f513c9eba3cfc3e90bb67ac6859631244cc774af&v=4"
+                      // src="https://avatars.githubusercontent.com/u/14923323?s=400&u=f513c9eba3cfc3e90bb67ac6859631244cc774af&v=4"
+                      src="https://upload.wikimedia.org/wikipedia/commons/5/50/User_icon-cp.svg"
                       alt="Jhon Doe"
+                      
                     />
                   </div>
                 </header>
 
                 <h3>Jhon Doe</h3>
+                
                 <div className="desc">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit et
                   cupiditate deleniti.
